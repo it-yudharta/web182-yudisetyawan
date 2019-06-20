@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/mahasiswas','MahasiswasController@index');
+Route::post('/mahasiswas/create','MahasiswasController@create');
+Route::get('/mahasiswas/{id}/edit','MahasiswasController@edit');
+Route::post('/mahasiswas/{id}/update','MahasiswasController@update');
+Route::get('/mahasiswas/{id}/delete','MahasiswasController@delete');
